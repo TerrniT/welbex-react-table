@@ -1,0 +1,37 @@
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.table {
+  display: table;
+  border-collapse:separate;
+  text-indent: initial;
+  border-spacing: 0.3em;
+  border-color: #333333;
+  width: 80%;
+  outline: 1px solid black;
+}
+
+.table__row {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: #333333;
+}
+
+.table__category {
+  padding: 1em;
+  vertical-align: top;
+  border-top: 1px solid #333333;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.table__cell {
+  padding: 1em;
+  vertical-align: top;
+  border-top: 1px solid #333333;
+  text-align: center;
+}
