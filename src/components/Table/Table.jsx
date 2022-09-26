@@ -1,7 +1,7 @@
 import React from "react";
 import './Table.css'
 
-export default function Table(params) {
+export default function Table( { data } ) {
   return (
     <table className="table">
       <thead className="table__head">
@@ -21,12 +21,14 @@ export default function Table(params) {
         </tr>
       </thead>
       <tbody className="table__body">
-        <tr className="table__row">
-          <td className="table__cel"></td>
-          <td className="table__cel"></td>
-          <td className="table__cel"></td>
-          <td className="table__cel"></td>
-        </tr>
+        {data.map((user, i) =>  (
+          <tr className="table__row" key={i}>
+            <td className="table__cell">{user.date}</td>
+            <td className="table__cell">{user.name}</td>
+            <td className="table__cell">{user.points}</td>
+            <td className="table__cell">{user.distance}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   )

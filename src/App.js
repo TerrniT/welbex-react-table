@@ -1,4 +1,6 @@
 import './App.css';
+import Table from './components/Table/Table';
+import {data} from './data';
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
          <h1 className='page__title'>
              Table
          </h1>
+        <Table data={data} />
       </div>
     </>
   );
