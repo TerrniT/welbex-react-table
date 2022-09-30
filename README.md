@@ -43,13 +43,7 @@ Test assignment for the position of React / React Native web programmer
 ## Todo
 
 - [ ] Deploy to Vercel
-
-### In Progress
-
 - [ ] Connect with Node server
-
-### Done ✓
-
 - [x] Complete styling project
 
 ## Запуск проекта
