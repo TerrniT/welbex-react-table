@@ -33,14 +33,14 @@ export default function TableForm({ filterSubmit, onReset }) {
 
   return (
   <form className="table-container" onSubmit={handleSubmit}>
-      <select name="name" value={name} onChange={handleNameChange} required>
-        <option value="">Field</option>
+      <select className="select__select" name="name" value={name} onChange={handleNameChange} required>
+        <option value="option-default">Field</option>
         <option value="name">Caption</option>
         <option value="points">Amout</option>
         <option value="distance">Distance</option>
       </select>
-      <select name="rule" value={rule} onChange={handleRuleChange} required>
-        <option value="">Condition</option>
+      <select className="select__select" name="rule" value={rule} onChange={handleRuleChange} required>
+        <option className="option-default" value="">Condition</option>
         <option value="equal">Equal</option>
         <option value="contain">Contain</option>
         <option value="greater">Greater</option>
@@ -56,10 +56,10 @@ export default function TableForm({ filterSubmit, onReset }) {
         placeholder="value"
       />
 
-      <button className="table-container__button-reset" type="reset" onClick={onClearFilter}>
+      <button className="table-container__button" type="reset" onClick={onClearFilter}>
         Reset
       </button>
-      <button className="table-container__button-filter" type="submit" >
+      <button className="table-container__button" type="submit" >
         Filter
       </button>
   

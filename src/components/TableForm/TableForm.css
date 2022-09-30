@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box
+}
 button {
   cursor: pointer; 
   border-radius:20px;
@@ -6,10 +11,32 @@ button {
 }
 
 select {
-  padding: 5px 15px;
-  margin: 10px;
-  border-radius:20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
+select::-ms-expand {
+  display: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.select__select {
+  width: 150px;
+  margin: 10px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #CCC;
+  height: 28px;
+  font-weight: bold;
+  border: 1px solid #444444;
+  background-color: lightslategray;
+  color: white;
+}
+
 
 .table-container {
   padding: 0 auto;
@@ -20,21 +47,32 @@ select {
 }
 
 .table-container__input {
-  padding: 5px 15px;
+  width: 14rem;
   margin: 10px;
-  border-radius:20px;
-  color: white;
-}
-
-.table-container__button-reset {
-  border: 1px solid #444444;
-  background-color: lightblue;
-}
-
-
-.table-container__button-filter {
+  padding: 8px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #CCC;
+  height: 28px;
+  font-weight: bold;
   border: 1px solid #444444;
   background-color: lightslategray;
   color: white;
-  font-weight: bold
+}
+
+.table-container__button {
+  border: 1px solid #444444;
+  background-color: #00b4d8;
+  color: white;
+  font-weight: bold;
+  padding: 5px 45px;
+  font-size: 16px;
+}
+
+.table-container__button:hover {
+  opacity: .7;
+  background-color: #00b4d8;
+}
+
+.option-default {
+  background-color: #333;
 }

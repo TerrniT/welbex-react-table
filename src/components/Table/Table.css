@@ -9,7 +9,8 @@
   display: table;
   border-collapse:separate;
   text-indent: initial;
-  border-spacing: 0.3em;
+  border-spacing: 0.6em;
+  border: none;
   border-color: #333333;
   width: 80%;
   outline: 1px solid black;
@@ -23,6 +24,8 @@
 
 .table__category {
   padding: 1em;
+  color:  #00b4d8;
+  font-weight: bold;
   vertical-align: top;
   border-top: 1px solid #333333;
   text-align: center;
