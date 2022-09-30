@@ -1,16 +1,7 @@
 # Welbex
 Test assignment for the position of React / React Native web programmer
 
-
-## Запуск проекта
-
-Клонировав репозиторий к себе на устройство, мы можете выполнить 
-
-### `npm start`
-
-Чтобы выполнить настройку всех dependencies
-
-## Task
+## Задание
 Нужно разработать таблицу в формате Single Page Application.
 
 ## Требования к таблице
@@ -47,3 +38,11 @@ Test assignment for the position of React / React Native web programmer
 - Архитектура решения
 - Удобство чтения кода и комментарии
 - Удобство проверки (деплой в том числе)
+
+## Запуск проекта
+
+Клонировав репозиторий к себе на устройство, мы можете выполнить 
+
+### `npm start`
+
+Чтобы выполнить настройку всех dependencies
