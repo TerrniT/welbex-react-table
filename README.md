@@ -33,11 +33,24 @@ Test assignment for the position of React / React Native web programmer
 - Библиотеки и плагины для работы с БД, ORM
 - CMS системы
 
+
 ## **Критерии оценки:**
 - Работоспособность согласно ТЗ
 - Архитектура решения
 - Удобство чтения кода и комментарии
 - Удобство проверки (деплой в том числе)
+
+## Todo
+
+- [ ] Deploy to Vercel
+
+### In Progress
+
+- [ ] Connect with Node server
+
+### Done ✓
+
+- [x] Complete styling project
 
 ## Запуск проекта
 
