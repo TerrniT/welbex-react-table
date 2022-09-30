@@ -6,6 +6,9 @@ import Table from './components/Table/Table';
 import TableForm from './components/TableForm/TableForm';
 import {data} from './data';
 
+
+// TODO: Move data.js to node server
+// TODO: Create "Not found " sign if results of filter == none
 function App() {
 
   const [sortData, setSortData] = useState(data)
