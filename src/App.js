@@ -4,14 +4,15 @@ import './assets/fonts.css'
 import Paginator from './components/Pagination/Paginator';
 import Table from './components/Table/Table';
 import TableForm from './components/TableForm/TableForm';
-import {data} from './data';
-
+//import {data} from './data';
 
 // TODO: Move data.js to node server
 // TODO: Create "Not found " sign if results of filter == none
+
 function App() {
 
-  const [sortData, setSortData] = useState(data)
+  const [sortData, setSortData] = useState([])
+
   const [sortCfg, setSortCfg] = useState({
     sortDirection: 'ASC',
     sortBox: 'name',
@@ -21,10 +22,27 @@ function App() {
   });
 
   const [renderData, setRenderData] = useState(sortData)
+
   const [pagesConfig, setPagesConfig] = useState({
     currentPage: 1,
     pageCount: Math.ceil(sortData.length / 5)
   })
+
+  const fetchData = () => {
+    fetch('http://localhost:5000/data.json')
+      .then(response => {
+        return response.json()
+      })
+      .then(data => {
+        setSortData(data)
+      })
+  }
+
+  useEffect(() => {
+    fetchData();
+  }), [];
+
+
 
   function handleSort(box) {
     if (sortCfg.sortBox === box) {
@@ -51,7 +69,7 @@ function App() {
   }
 
   function onResetHandle() {
-    setSortData([...data]);
+    setSortData([...responseData]);
     setPagesConfig({...pagesConfig, currentPage: 1});
   }
 

@@ -20,8 +20,8 @@ export default function Table( { data } ) {
         </tr>
       </thead>
       <tbody className="table__body">
-        {data.map((user, i) =>  (
-          <tr className="table__row" key={i}>
+        {data.map((user) =>  (
+          <tr className="table__row" key={user.id}>
             <td className="table__cell">{user.date}</td>
             <td className="table__cell">{user.name}</td>
             <td className="table__cell">{user.points}</td>
