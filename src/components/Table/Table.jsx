@@ -2,8 +2,7 @@ import React from "react";
 import './Table.css'
 
 export default function Table( { data } ) {
-  return (
-    <table className="table">
+  return ( <table className="table">
       <thead className="table__head">
         <tr className="table__row">
           <th className="table__category">

@@ -1,0 +1,40 @@
+button {
+  cursor: pointer; 
+  border-radius:20px;
+  padding: 5px 15px;
+  margin: 10px;
+}
+
+select {
+  padding: 5px 15px;
+  margin: 10px;
+  border-radius:20px;
+}
+
+.table-container {
+  padding: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-container__input {
+  padding: 5px 15px;
+  margin: 10px;
+  border-radius:20px;
+  color: white;
+}
+
+.table-container__button-reset {
+  border: 1px solid #444444;
+  background-color: lightblue;
+}
+
+
+.table-container__button-filter {
+  border: 1px solid #444444;
+  background-color: lightslategray;
+  color: white;
+  font-weight: bold
+}
