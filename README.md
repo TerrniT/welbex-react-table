@@ -10,11 +10,6 @@ Test assignment for the position of React / React Native web programmer
 
 Чтобы выполнить настройку всех dependencies
 
-Откройте [http://localhost:3000](http://localhost:3000) чтобы увидеть проект в браузере.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
 ## Task
 Нужно разработать таблицу в формате Single Page Application.
 
